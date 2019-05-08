@@ -24,5 +24,18 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
+
+        String[] numbersEnglish = new String[10];
+        numbersEnglish [0] = "One";
+        numbersEnglish [1] = "Two";
+        numbersEnglish [2] = "Three";
+        numbersEnglish [3] = "Four";
+        numbersEnglish [4] = "Five";
+        numbersEnglish [5] = "Six";
+        numbersEnglish [6] = "Seven";
+        numbersEnglish [7] = "Eight";
+        numbersEnglish [8] = "Nine";
+        numbersEnglish [9] = "Ten";
+
     }
 }
