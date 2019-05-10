@@ -17,7 +17,6 @@ package com.example.android.miwok;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -31,23 +30,23 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
         ArrayList<String> words = new ArrayList<>();
-        words.add("One");
-        words.add("Two");
-        words.add("Three");
-        words.add("Four");
-        words.add("Five");
-        words.add("Six");
-        words.add("Seven");
-        words.add("Eight");
-        words.add("Nine");
-        words.add("Ten");
+        words.add("one");
+        words.add("two");
+        words.add("three");
+        words.add("four");
+        words.add("five");
+        words.add("six");
+        words.add("seven");
+        words.add("eight");
+        words.add("nine");
+        words.add("ten");
 
-        LinearLayout rootVew = (LinearLayout) (findViewById(R.id.rootView));
-        TextView wordView = new TextView(this);
+        LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
 
-        for ( int i = 0; i<10; i++) {
-            wordView.setText(words.get(i));
-            rootVew.addView(wordView);
+        for (int i=0; i<words.size(); i++){
+            TextView childView = new TextView (this);
+            childView.setText(words.get(i));
+            rootView.addView(childView);
         }
 
     }
